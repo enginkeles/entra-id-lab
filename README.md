@@ -12,60 +12,70 @@ In this lab, I set up a Microsoft Entra ID tenant and worked through essential i
 
 ## What I Did
 
-1. **Created Internal and External Users**  
-   - Created three users with different roles and attributes: 
-     - User 1: Basic user role (01, 02, 03)
-     - User 2: Guest role - external (04)
-   ![06 Users Overview](path/to/screenshot6.png)
+### Step 1: **Creating Internal and External Users**  
+In this step, I created both internal and external users for testing purposes.
 
-3. **Assigned Roles to Myself**  
-   - Assigned necessary roles to myself, including Global Administrator.
-   ![05 Role Assignment](path/to/screenshot5.png)
+- [Create Internal User - Step 1](screenshots/01-create-new-internal.png)
+- [Create Internal User - Step 2](screenshots/02-create-new-internal-2.png)
+- [Internal User Created](screenshots/03-internal-created.png)
+- [Invite External User](screenshots/04-invite-external.png)
 
-4. **Set Up MFA**  
-   - Configured Multi-Factor Authentication (MFA) for myself.
-   ![Screenshot 7](path/to/screenshot7.png)
+![Overview of Created Users](screenshots/06-users-overview.png)
 
-5. **Created a New Tenant**  
-   - Encountered an issue with obtaining an M365 trial license for the original tenant. Created a new tenant and replicated the user setup to continue testing.
-   ![Screenshot 8](path/to/screenshot8.png)
-   ![Screenshot 9](path/to/screenshot9.png)
-   ![Screenshot 10](path/to/screenshot10.png)
+### Step 2: **Assigning Roles and Configuring MFA**  
+I assigned roles to myself, including the Global Administrator role, and configured Multi-Factor Authentication (MFA).
 
+- [Assign Roles to Users](screenshots/05-role-assignment.png)
+- [Configure MFA](screenshots/07-mfa-setup.png)
 
-6. **Assigned Licenses to Users**  
-   - Assigned Microsoft 365 Business Premium licenses to users for trial testing.
-   ![Screenshot 11](path/to/screenshot11.png)
-   ![Screenshot 12](path/to/screenshot12.png)
-   ![Screenshot 13](path/to/screenshot13.png)
+### Step 3: **Creating a New Tenant**  
+Due to an issue obtaining an M365 trial licence for the original tenant, I created a new tenant and replicated the user setup.
 
-7. **Modified User Licenses**  
-   - Adjusted the licenses for internal users based on their roles and requirements.
-   ![Screenshot 14](path/to/screenshot14.png)
+- [Buy Licence for New Tenant](screenshots/08-buy-license.png)
+- [Setup New Users](screenshots/09-new-users.png)
 
-8. **Created a Security Group**  
-   - Created a security group and added internal users to it for role-based management.
-   ![Screenshot 15](path/to/screenshot15.png)
-   ![Screenshot 16](path/to/screenshot16.png)
+![Updated New Internal User](screenshots/10-updated-new-internal.png)
 
-9. **Assigned Licenses to Security Group**  
-   - Assigned licenses to the security group to streamline user management.
-   ![Screenshot 17](path/to/screenshot17.png)
+### Step 4: **Assigning Licences to Users**  
+I assigned Microsoft 365 Business Premium licences to users.
 
-10. **Configured MFA on Security Group**  
-   - Set up MFA for the entire security group to enforce additional security measures.
-   ![Screenshot 18](path/to/screenshot18.png)
+- [Assign Licences to Users](screenshots/11-assigning-license.png)
+- [Updated Internal User Licence](screenshots/12-updated-new-internal-2.png)
 
-11. **Reviewed Audit Logs**  
-   - Analysed audit logs to ensure proper activity tracking and troubleshooting.
-   ![Screenshot 19](path/to/screenshot19.png)
+![Updated Users Overview](screenshots/13-updated-users-overview.png)
+
+### Step 5: **Modifying User Licences**  
+I modified the licences for internal users based on their roles and requirements.
+
+- [Modify User Licences](screenshots/14-modifying-license-permissions.png)
+
+### Step 6: **Creating a Security Group**  
+I created a security group and added internal users to it for role-based management.
+
+- [Create Security Group](screenshots/15-create-security-group.png)
+- [Add Members to Security Group](screenshots/16-added-members-group.png)
+
+### Step 7: **Assigning Licences to Security Group**  
+I assigned licences to the security group for user management.
+
+- [Assign Licences to Security Group](screenshots/17-assign-license-group.png)
+
+### Step 8: **Configuring MFA on Security Group**  
+I set up MFA for the entire security group to enforce additional security measures.
+
+- [Setup MFA for Security Group](screenshots/18-setup-mfa-group.png)
+
+### Step 9: **Reviewed Audit Logs**  
+I analysed audit logs to ensure proper activity tracking and troubleshooting.
+
+- [Audit Logs](screenshots/19-audit-logs.png)
 
 ## Issues Encountered
-- **License Acquisition Issue**: Initially could not obtain a Microsoft 365 trial license for the existing tenant. As a workaround, I created a new tenant and replicated the environment for testing.
+- **Licence Acquisition Issue**: Initially could not obtain a Microsoft 365 trial licence for the existing tenant. As a workaround, I created a new tenant and replicated the environment for testing.
 
 ## Tools Used
-- Microsoft Entra admin center
-- Microsoft 365 Admin Center
+- Microsoft Entra admin centre
+- Microsoft 365 Admin Centre
 
 ## Conclusion
-I successfully set up and tested core features of Microsoft Entra ID, including user and group management, license assignment, MFA, and Conditional Access. The environment is now fully functional and ready for further testing and integration.
+I successfully set up and tested core features of Microsoft Entra ID, including user and group management, licence assignment, MFA, and Conditional Access. The environment is now fully functional and ready for further testing and integration.
